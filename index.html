@@ -456,5 +456,76 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <form class="contact-form">
+          <div class="form-container">
+            <button class="modal-close-btn">
+              <svg class="close-svg" width="8px" height="8px">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <p class="form-p">Leave your contacts and we will call you back</p>
+            <label for="user-name" class="form-label">Name</label>
+
+            <input
+              type="text"
+              class="form-input"
+              id="user-name"
+              name="user-name"
+              required
+              pattern="[a-zA-ZА-Яа-яіІїЇєЄ'0-9]+"
+            />
+            <label for="user-tel" class="form-label">Phone</label>
+            <input
+              type="tel"
+              class="form-input"
+              id="user-tel"
+              name="user-mobile-phone"
+              required
+            />
+            <label for="user-email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-input"
+              id="user-email"
+              name="user-email"
+              required
+            />
+            <label for="user-comment" class="form-label-comment">Comment</label>
+            <textarea
+              name="Comment"
+              class="form-comment"
+              id="user-comment"
+              placeholder="Text input"
+              pattern="[a-zA-ZА-Яа-яіІїЇєЄ']+"
+            ></textarea>
+
+            <input
+              type="checkbox"
+              class="form-checkbox"
+              name="Privacy-policy"
+              value="privacy"
+              required
+            /><label class="privacy-label"
+              ><span class="form-span-privacy">
+                <svg
+                  class="privacy-svg"
+                  width="10"
+                  height="8"
+                  aria-label="checkmark svg"
+                >
+                  <use href="./images/icons.svg#icon-Vector"></use>
+                </svg> </span
+              >I accept the terms and conditions of the
+              <a href="">Privacy Policy</a></label
+            >
+            <div class="form-button">
+              <button type="submit" class="submit-button">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
